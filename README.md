@@ -23,7 +23,6 @@ class Solution {
         let r = nums.count % 2
         let half = nums.count / 2
         if r == 0{
-            print("\(nums[half]) \(nums[half-1])")
             return Double((nums[half] + nums[half-1])) / 2.0
         }else {
             return Double(nums[Int(half)])
