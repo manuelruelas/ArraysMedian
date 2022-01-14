@@ -1,4 +1,5 @@
 # ArraysMedian
+[![Swift](https://github.com/manuelruelas/ArraysMedian/actions/workflows/swift.yml/badge.svg?branch=master)](https://github.com/manuelruelas/ArraysMedian/actions/workflows/swift.yml)
 
 Metodo para agrupar dos arreglos y obtener su mediana.
 
