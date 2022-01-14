@@ -2,14 +2,17 @@ import XCTest
 @testable import ArraysMedian
 
 final class ArraysMedianTests: XCTestCase {
-    func testExample() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct
-        // results.
-        XCTAssertEqual(ArraysMedian().text, "Hello, World!")
+    
+    
+    func testOddSize() {
+        XCTAssertEqual(ArraysMedian().findMedianSortedArrays([1,2,3], [2,3]), 2.0)
+    }
+    func testEvenSize(){
+        XCTAssertEqual(ArraysMedian().findMedianSortedArrays([1,2,3], [2,3,4]), 2.5)
     }
 
     static var allTests = [
-        ("testExample", testExample),
+        ("testOddSize", testOddSize),
+        ("testEvenSize", testEvenSize),
     ]
 }
