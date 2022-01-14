@@ -5,17 +5,14 @@ Metodo para agrupar dos arreglos y obtener su mediana.
 Para este algoritmo existen dos casos, que dependeran de si la longitud del arreglo es par o non.
 
 En el primer test se probo el caso non con los siguientes datos:
-*Array1 = [1,2,3]
-*Array2 = [2,3]
-*Resultado = 2.0
+* Array1 = [1,2,3]
+* Array2 = [2,3]
+* Resultado = 2.0
 
 En el segundo test de evalua el caso par con los siguientes datos:
-*Array1 = [1,2,3]
-*Array2 = [2,3,4]
-*Resultado = 2.5
-
-En la seccion de test del proyecto hay dos metodos encargados de automatizar esas pruebas.
-
+* Array1 = [1,2,3]
+* Array2 = [2,3,4]
+* Resultado = 2.5
 ```Swift
 class Solution {
     func findMedianSortedArrays(_ nums1: [Int], _ nums2: [Int]) -> Double {
@@ -33,3 +30,15 @@ class Solution {
     }
 }
 ```
+En la seccion de test del proyecto hay dos metodos encargados de automatizar esas pruebas.
+
+```Swift
+func testOddSize() {
+        XCTAssertEqual(ArraysMedian().findMedianSortedArrays([1,2,3], [2,3]), 2.0)
+    }
+func testEvenSize(){
+    XCTAssertEqual(ArraysMedian().findMedianSortedArrays([1,2,3], [2,3,4]), 2.5)
+}
+```
+
+
